@@ -1,5 +1,5 @@
 
-<%= @game.player1.name %> attacked <%= @game.player2.name %>!
+<%= @game.current_player.name %> attacked <%= @game.opponent_player.name %>!
 
 <form action='/play'>
 <button type="submit" name="go back">Go back!</button>

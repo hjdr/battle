@@ -1,4 +1,3 @@
-
 feature "see opponents HIT points" do
   scenario "both players enter their names in a from" do
     sign_in_and_play

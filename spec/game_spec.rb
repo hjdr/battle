@@ -21,4 +21,11 @@ describe Game do
       expect(game.player2).to eq player2
     end
   end
+  describe "#switch" do
+    it "switches the current player" do
+      allow(player2).to receive(:reduce_health)
+      game.attack(player2)
+      expect(game.current_player).to eq player2
+    end
+  end
 end
