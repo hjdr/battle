@@ -1,9 +1,7 @@
-
-
-<%= @player1 %> <%= @player2 %>
+<%= @game.player1.name %> <%= @game.player2.name %>
 <br>
 
-<%= @player2 %>'s HIT points: <%= @player2_points %>
+<%= @game.player2.name %>'s HIT points: <%= @game.player2.health_points %>
 <br>
 
 <form action='/attack'>
