@@ -8,7 +8,7 @@ class Game
 
   def attack(player)
     player.reduce_health
-    #switch(player)
+    # switch
   end
 
   def player1
