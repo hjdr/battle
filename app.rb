@@ -27,7 +27,12 @@ class Battle < Sinatra::Base
   get '/attack' do
     @game = $game
     @game.attack(@game.opponent_player)
+    redirect '/death' if @game.opponent_player.death
     erb(:attack)
   end
 
+  get '/death' do
+    @game = $game
+    erb(:death)
+  end
 end
