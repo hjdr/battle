@@ -6,6 +6,14 @@ class Game
     @opponent_player = @players.last
   end
 
+  def self.create(player1, player2)
+    @game = Game.new(player1, player2)
+  end
+
+  def self.instance
+    @game
+  end
+  
   def attack(player)
     player.reduce_health
     # switch
